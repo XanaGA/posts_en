@@ -8,7 +8,7 @@ image: images/virtual_world.png
 ---
 # Finally, here we are...
 
-![](https://github.com/XanaGA/posts_en/blob/master/images/virtual_world.png "Credit: VQGAN + CLIP")
+![]({{ site.baseurl }}/images/virtual_world.png "Credit: VQGAN + CLIP")
 
 ## The beginning
 I have been self-learning about AI and Deep Learning since I started my degree more than three years ago. But lately, I had the feeling of being stuck, even a bit lost. Moreover, the idea of starting to share my work has always been in the back of my head. I think individually we can achieve cool things, but the big changes come from communities. We can find many examples just in the AI field, from Fastai to Hugging Face and many more. I want to be connected with those communities!🌍
