@@ -8,6 +8,8 @@ permalink: /about/
     .center {
         display: block;
         margin: 10px auto 20px;
+        max-width:50%;
+        max-height:50%;
     }
 </style>
 
