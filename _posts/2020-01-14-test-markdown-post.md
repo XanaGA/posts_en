@@ -1,103 +1,34 @@
 ---
 toc: true
 layout: post
-description: A minimal example of using markdown with fastpages.
-categories: [markdown]
-title: An Example Markdown Post
+description: First post explaining my plans with this blog.
+categories: [general]
+title: First Post
+image: images/virtual_world.png
 ---
-# Example Markdown Post
+# Finally, here we are...
 
-## Basic setup
+![]({{ site.baseurl }}/images/virtual_world.png "Credit: VQGAN + CLIP")
 
-Jekyll requires blog post files to be named according to the following format:
+## The beginning
+I have been self-learning about AI and Deep Learning since I started my degree more than three years ago. But lately, I had the feeling of being stuck, even a bit lost. Moreover, the idea of starting to share my work has always been in the back of my head. I think individually we can achieve cool things, but the big changes come from communities. We can find many examples just in the AI field, from Fastai to Hugging Face. I want to be connected with those communities!🌍
 
-`YEAR-MONTH-DAY-filename.md`
+Thinking about the best way to do it, I remembered what *Jeremy Howard* said about the importance of blogging in the second edition of one of the first [courses](https://course.fast.ai/) I took. Then I discovered Fastpages, so the decision was taken, I would start blogging!
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `filename` is whatever file name you choose, to remind yourself what this post is about. `.md` is the file extension for markdown files.
+## What you will find in this blog
 
-The first line of the file should start with a single hash character, then a space, then your title. This is how you create a "*level 1 heading*" in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line `## File names` above.
+With this work I want to share my work, the things I learn, and maybe my thoughts. It took me too long to start blogging because I wanted everything to be perfect, but this is not the idea. I will start my blog, it will be dynamic, things will change, there will be mistakes, and it never will be perfect. Beautiful, isn't it?
 
-## Basic formatting
+Together with AI (which is my true love😍), I'm trying to get into Computer Graphics, VR/AR, and simulation. For that reason, I am trying to learn about Geometric Deep Learning, Neural Rendering, and also Unreal Engine! 
 
-You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
+Please remember this is a leaner's blog, you are encouraged to help, give suggestions, and correct me if I am wrong. Let's do this journey together!
 
----
+## Why not in Spanish?
 
-## Lists
+As you may have noticed, I'm not a native English speaker. In fact, my mother tongue is Spanish. So, why not write in Spanish. Well, there are a couple of reasons:
 
-Here's a list:
+I want to practice my English. Learn by doing!
+In English, I have access to a broader audience, so more people can help or share their ideas.
+And well... I have never said there won't be Spanish posts😉 I think with different languages we can target different audiences. So if I see some content is redundant or irrelevant in English, I will make it in Spanish.
 
-- item 1
-- item 2
-
-And a numbered list:
-
-1. item 1
-1. item 2
-
-## Boxes and stuff
-
-> This is a quotation
-
-{% include alert.html text="You can include alert boxes" %}
-
-...and...
-
-{% include info.html text="You can include info boxes" %}
-
-## Images
-
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-
-## Code
-
-You can format text and code per usual 
-
-General preformatted text:
-
-    # Do a thing
-    do_thing()
-
-Python code and output:
-
-```python
-# Prints '2'
-print(1+1)
-```
-
-    2
-
-Formatting text as shell commands:
-
-```shell
-echo "hello world"
-./some_script.sh --option "value"
-wget https://example.com/cat_photo1.png
-```
-
-Formatting text as YAML:
-
-```yaml
-key: value
-- another_key: "another value"
-```
-
-
-## Tables
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
-
-## Tweetcards
-
-{% twitter https://twitter.com/jakevdp/status/1204765621767901185?s=20 %}
-
-
-## Footnotes
-
-
-
-[^1]: This is the footnote.
-
+So see you in the next one, adiós!👋
