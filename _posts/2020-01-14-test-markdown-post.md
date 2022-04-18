@@ -27,8 +27,8 @@ Please remember this is a leaner's blog, you are encouraged to help, give sugges
 
 As you may have noticed, I'm not a native English speaker. In fact, my mother tongue is Spanish. So, why not write in Spanish. Well, there are a couple of reasons:
 
-I want to practice my English. Learn by doing!
-In English, I have access to a broader audience, so more people can help or share their ideas.
-And well... I have never said there won't be Spanish posts😉 I think with different languages we can target different audiences. So if I see some content is redundant or irrelevant in English, I will make it in Spanish.
+- I want to practice my English. Learn by doing!
+- In English, I have access to a broader audience, so more people can help or share their ideas.
+- And well... I have never said there won't be Spanish posts😉 I think with different languages we can target different audiences. So if I see some content is redundant or irrelevant in English, I will make it in Spanish.
 
 So see you in the next one, adiós!👋
