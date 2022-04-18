@@ -11,7 +11,7 @@ image: images/virtual_world.png
 ![]({{ site.baseurl }}/images/virtual_world.png "Credit: VQGAN + CLIP")
 
 ## The beginning
-I have been self-learning about AI and Deep Learning since I started my degree more than three years ago. But lately, I had the feeling of being stuck, even a bit lost. Moreover, the idea of starting to share my work has always been in the back of my head. I think individually we can achieve cool things, but the big changes come from communities. We can find many examples just in the AI field, from Fastai to Hugging Face. I want to be connected with those communities!🌍
+I have been self-learning about AI and Deep Learning since I started my degree more than three years ago. But lately, I had the feeling of being stuck, even a bit lost. Moreover, the idea of starting to share my work has always been in the back of my head. I think individually we can achieve cool things, but the big changes come from communities. We can find many examples just in the AI field, from Fastai to Hugging Face and many more. I want to be connected with those communities!🌍
 
 Thinking about the best way to do it, I remembered what *Jeremy Howard* said about the importance of blogging in the second edition of one of the first [courses](https://course.fast.ai/) I took. Then I discovered Fastpages, so the decision was taken, I would start blogging!
 
