@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="ResNet for Traffic Sign Classification With PyTorch" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is my implementation of an existing blog posts on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this will be a great starting point!🚗" />
-<meta property="og:description" content="This is my implementation of an existing blog posts on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this will be a great starting point!🚗" />
+<meta name="description" content="This is my implementation of an existing blog post on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this woul be a great starting point!🚗" />
+<meta property="og:description" content="This is my implementation of an existing blog post on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this woul be a great starting point!🚗" />
 <link rel="canonical" href="https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html" />
 <meta property="og:url" content="https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html" />
 <meta property="og:site_name" content="Deep Diving" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://xanaga.github.io/posts_en/images/traffic.png" />
 <meta property="twitter:title" content="ResNet for Traffic Sign Classification With PyTorch" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-21T00:00:00-05:00","datePublished":"2022-04-21T00:00:00-05:00","description":"This is my implementation of an existing blog posts on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this will be a great starting point!🚗","headline":"ResNet for Traffic Sign Classification With PyTorch","image":"https://xanaga.github.io/posts_en/images/traffic.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html"},"url":"https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-21T00:00:00-05:00","datePublished":"2022-04-21T00:00:00-05:00","description":"This is my implementation of an existing blog post on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this woul be a great starting point!🚗","headline":"ResNet for Traffic Sign Classification With PyTorch","image":"https://xanaga.github.io/posts_en/images/traffic.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html"},"url":"https://xanaga.github.io/posts_en/fastai/computer%20vision/traffic%20sign/2022/04/21/ResNet_for_Traffic_Sign_Classification_With_PyTorch.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/posts_en/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xanaga.github.io/posts_en/feed.xml" title="Deep Diving" /><link rel="shortcut icon" type="image/x-icon" href="/posts_en/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">ResNet for Traffic Sign Classification With PyTorch</h1><p class="page-description">This is my implementation of an existing blog posts on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this will be a great starting point!🚗</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-21T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">ResNet for Traffic Sign Classification With PyTorch</h1><p class="page-description">This is my implementation of an existing blog post on Traffic Sign classification. The previous work done by Pavel Surmenok was based on Fastai v1, so I have tried to update it to Fastai v2. If you are interested in computer vision in autonomous driving, and you want to learn more about Fastai this woul be a great starting point!🚗</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-21T00:00:00-05:00" itemprop="datePublished">
         Apr 21, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -153,6 +153,14 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/posts_en/images/copied_from_nb/my_icons/traffic/traffic.png" alt=""></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
