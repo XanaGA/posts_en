@@ -2278,7 +2278,7 @@ We can use <code>slice</code> when specifying the learning rate to allows us to 
                                                 <span class="n">Normalize</span><span class="o">.</span><span class="n">from_stats</span><span class="p">(</span><span class="o">*</span><span class="n">imagenet_stats</span><span class="p">)],</span>
                                     <span class="n">train</span><span class="o">=</span><span class="s1">'all'</span><span class="p">)</span>
 
-<span class="n">learn</span> <span class="o">=</span> <span class="n">cnn_learner</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">resnet34</span><span class="p">,</span><span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="n">accuracy</span><span class="p">,</span><span class="n">f1_score_mult</span><span class="p">])</span>
+<span class="n">learn</span> <span class="o">=</span> <span class="n">cnn_learner</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">resnet34</span><span class="p">,</span><span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="n">accuracy</span><span class="p">,</span><span class="n">f1_score_mult</span><span class="p">],</span> <span class="n">wd</span><span class="o">=</span><span class="n">wd</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -3302,7 +3302,7 @@ We can use <code>slice</code> when specifying the learning rate to allows us to 
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">'resnet34_weights.pth'</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">torch</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">learn</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">state_dict</span><span class="p">(),</span> <span class="s1">'resnet34_weights_traffic.pth'</span><span class="p">)</span>
 </pre></div>
 
     </div>
