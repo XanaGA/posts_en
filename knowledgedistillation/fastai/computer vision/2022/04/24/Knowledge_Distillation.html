@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Knowledge Distillation for Traffic Sign Recognition" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Apply knowledge distillation to a traffic sign recognition problem" />
-<meta property="og:description" content="Apply knowledge distillation to a traffic sign recognition problem" />
+<meta name="description" content="This is the second part of the post ResNet for Traffic Sign Classification With PyTorch, in which we will try to get close to the results of the previous model but with a smaller one. To do so we will apply the knowledge distillation technique, want to know more? Let’s dive in!" />
+<meta property="og:description" content="This is the second part of the post ResNet for Traffic Sign Classification With PyTorch, in which we will try to get close to the results of the previous model but with a smaller one. To do so we will apply the knowledge distillation technique, want to know more? Let’s dive in!" />
 <link rel="canonical" href="https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html" />
 <meta property="og:url" content="https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html" />
 <meta property="og:site_name" content="Deep Diving" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://xanaga.github.io/posts_en/images/compress.jpg" />
 <meta property="twitter:title" content="Knowledge Distillation for Traffic Sign Recognition" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-24T00:00:00-05:00","datePublished":"2022-04-24T00:00:00-05:00","description":"Apply knowledge distillation to a traffic sign recognition problem","headline":"Knowledge Distillation for Traffic Sign Recognition","image":"https://xanaga.github.io/posts_en/images/compress.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html"},"url":"https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-04-24T00:00:00-05:00","datePublished":"2022-04-24T00:00:00-05:00","description":"This is the second part of the post ResNet for Traffic Sign Classification With PyTorch, in which we will try to get close to the results of the previous model but with a smaller one. To do so we will apply the knowledge distillation technique, want to know more? Let’s dive in!","headline":"Knowledge Distillation for Traffic Sign Recognition","image":"https://xanaga.github.io/posts_en/images/compress.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html"},"url":"https://xanaga.github.io/posts_en/knowledgedistillation/fastai/computer%20vision/2022/04/24/Knowledge_Distillation.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/posts_en/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xanaga.github.io/posts_en/feed.xml" title="Deep Diving" /><link rel="shortcut icon" type="image/x-icon" href="/posts_en/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Knowledge Distillation for Traffic Sign Recognition</h1><p class="page-description">Apply knowledge distillation to a traffic sign recognition problem</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-24T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Knowledge Distillation for Traffic Sign Recognition</h1><p class="page-description">This is the second part of the post **ResNet for Traffic Sign Classification With PyTorch**, in which we will try to get close to the results of the previous model but with a smaller one. To do so we will apply the knowledge distillation technique, want to know more? Let's dive in!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-04-24T00:00:00-05:00" itemprop="datePublished">
         Apr 24, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
