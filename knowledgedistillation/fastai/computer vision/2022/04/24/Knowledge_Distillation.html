@@ -225,25 +225,6 @@ So my objectives with this notebook are:</p>
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">%</span><span class="n">reload_ext</span> <span class="n">autoreload</span>
-<span class="o">%</span><span class="n">autoreload</span> <span class="mi">2</span>
-<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">fastai</span>
 <span class="n">fastai</span><span class="o">.</span><span class="n">__version__</span>
 </pre></div>
@@ -944,7 +925,7 @@ This is why we use <code>create_cnn_model</code> fuction of Fastai, which given 
     <svg class="octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
     <strong>Note: </strong>The <code>teacher</code> is a Sequential object with two modules. The module <code>(0)</code> is the <strong>body</strong>, and it is the original architecture of the model (in our case resnet34), which can be pretrained (not in our case). The second module, the <code>(1): Sequential</code>, is the <strong>head</strong> which is initialized using <code>kaiming_normal</code> initialization by default(it can be changed using the <code>init</code> argument), so it is not pretrained. The layers of this <strong>head</strong> are the default used in Fastai. The decision about where to <em>cut</em> the original model is taken according to Fastai metadata for each architecture, but as we have said it is customizable using the <code>cut</code> argument.
 </div>
-Our teacher model is almost ready! The only thing that last is that, as we don't want to propagate gradients through our teacher (we only want it for inference) we should make sure it is frozen.
+<p>Our teacher model is almost ready! The only thing that last is that, as we don't want to propagate gradients through our teacher (we only want it for inference) we should make sure it is frozen.</p>
 <p>The following PyTorch code does exactly that.</p>
 
 </div>
@@ -1439,9 +1420,8 @@ If we look at the warning at the top of the output, we can see the problem. We o
 <div class="flash flash-error">
     <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
     <strong>Warning: </strong>If you use <code>student.summary()</code> it will raise the following error:
-</div>
-<em>Exception occured in <code>KnowledgeDistillation</code> when calling event <code>after_loss</code>:
-  cross_entropy_loss(): argument 'target' (position 2) must be Tensor, not NoneType.</em>
+</div>Exception occured in <code>KnowledgeDistillation</code> when calling event <code>after_loss</code>:
+  cross_entropy_loss(): argument 'target' (position 2) must be Tensor, not NoneType.
 Although, it only affect to the summary method. So we can continue and if we really want to check the learner we can remove and add back the callback, as the collapsed code shows below.
 
 </div>
