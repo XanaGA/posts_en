@@ -1419,8 +1419,9 @@ If we look at the warning at the top of the output, we can see the problem. We o
 <p></p>
 <div class="flash flash-error">
     <svg class="octicon octicon-alert" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
-    <strong>Warning: </strong>If you use <code>student.summary()</code> it will raise the following error: <em>Exception occured in <code>KnowledgeDistillation</code> when calling event <code>after_loss</code>: cross_entropy_loss(): argument ’target’ (position 2) must be Tensor, not NoneType.</em>
-</div>Although, it only affect to the summary method. So we can continue and if we really want to check the learner we can remove and add back the callback, as the collapsed code shows below.
+    <strong>Warning: </strong>If you use <code>student.summary()</code> it will raise the following error: <em>Exception occured in <code>KnowledgeDistillation</code> when calling event <code>after_loss</code>: cross_entropy_loss(): argument ’target’ (position 2) must be Tensor, not NoneType.</em> 
+</div>
+<p>Although, it only affect to the summary method. So we can continue and if we really want to check the learner we can remove and add back the callback, as the collapsed code shows below.</p>
 
 </div>
 </div>
@@ -1428,16 +1429,11 @@ If we look at the warning at the top of the output, we can see the problem. We o
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="c1">#collapse-output</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'See in which position the KnowledgeDistillation is:'</span><span class="p">)</span>
+<div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'See in which position the KnowledgeDistillation is:'</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="o">.</span><span class="n">cbs</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">()</span>
 
@@ -1455,8 +1451,10 @@ If we look at the warning at the top of the output, we can see the problem. We o
     </div>
 </div>
 </div>
-
-    </details>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+</p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1610,6 +1608,7 @@ Check that you have the same list as before the summary:
 </div>
 </div>
 
+    </details>
 </div>
     
 
