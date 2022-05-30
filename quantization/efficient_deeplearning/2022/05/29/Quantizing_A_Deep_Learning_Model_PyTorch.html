@@ -147,6 +147,14 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://raw.githubusercontent.com/XanaGA/posts_en/6d6f32ecc94946e193b900fbe0f0f6c99cfcf14c/images/pixelart_quant.jpg" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Introduction">
 <a class="anchor" href="#Introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction<a class="anchor-link" href="#Introduction"> </a>
 </h1>
@@ -160,7 +168,7 @@ window.onload = wrap_img;
 </li>
 </ul>
 <p>So I will try to make things as similar as possible to the original notebook in case anyone wants to use it to follow the book. I will try not to repeat the explanations made in that notebook and focuse on explaining the changes regarding the PyTorch implementation.</p>
-<p>Moreover, there is another <a href="otherpost">post</a> that explores some difficulties I found while doing the PyTorch implementation, so I encourage you to read it as well.</p>
+<p>Moreover, there is another <a href="https://xanaga.github.io/posts_en/quantization/efficient_deeplearning/2022/05/30/Improving_quantization_by_normalizing_weights.html">post</a> that explores some difficulties I found while doing the PyTorch implementation, so I encourage you to read it as well.</p>
 
 </div>
 </div>
@@ -350,7 +358,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>For creating the model we will use a class. Using <code>Sequential()</code> would be more similar to how it is done with Keras, but I think using the class will allow for more flexibility.</p>
-<p>You will see a <code>norm_w</code> argument passed to the constructor. It is used for normalizing the weights of the layers, as it improves significantly the effectivity of the quantization. This is further detailed in the <a href="otherpost">complementary post</a>.</p>
+<p>You will see a <code>norm_w</code> argument passed to the constructor. It is used for normalizing the weights of the layers, as it improves significantly the effectivity of the quantization. This is further detailed in the <a href="https://xanaga.github.io/posts_en/quantization/efficient_deeplearning/2022/05/30/Improving_quantization_by_normalizing_weights.html">complementary post</a>.</p>
 
 </div>
 </div>
