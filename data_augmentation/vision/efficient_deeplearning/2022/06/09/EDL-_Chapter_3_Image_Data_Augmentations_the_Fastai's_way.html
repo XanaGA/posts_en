@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Image Data Augmentations the Fastai’s way" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a version of the codelab from chapter 3 from the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version of the notebook we simply train the model for 100 epochs. Although, when using Fastai we normally use train the models in a different way. Intrigued?" />
-<meta property="og:description" content="This is a version of the codelab from chapter 3 from the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version of the notebook we simply train the model for 100 epochs. Although, when using Fastai we normally use train the models in a different way. Intrigued?" />
+<meta name="description" content="This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?" />
+<meta property="og:description" content="This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?" />
 <link rel="canonical" href="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html" />
 <meta property="og:url" content="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html" />
 <meta property="og:site_name" content="Deep Diving" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://xanaga.github.io/posts_en/images/homer_augmented.png" />
 <meta property="twitter:title" content="Image Data Augmentations the Fastai’s way" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-09T00:00:00-05:00","datePublished":"2022-06-09T00:00:00-05:00","description":"This is a version of the codelab from chapter 3 from the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version of the notebook we simply train the model for 100 epochs. Although, when using Fastai we normally use train the models in a different way. Intrigued?","headline":"Image Data Augmentations the Fastai’s way","image":"https://xanaga.github.io/posts_en/images/homer_augmented.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"},"url":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-09T00:00:00-05:00","datePublished":"2022-06-09T00:00:00-05:00","description":"This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?","headline":"Image Data Augmentations the Fastai’s way","image":"https://xanaga.github.io/posts_en/images/homer_augmented.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"},"url":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/posts_en/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xanaga.github.io/posts_en/feed.xml" title="Deep Diving" /><link rel="shortcut icon" type="image/x-icon" href="/posts_en/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,7 +75,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Image Data Augmentations the Fastai&#39;s way</h1><p class="page-description">This is a version of the codelab from chapter 3 from the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version of the notebook we simply train the model for 100 epochs. Although, when using Fastai we normally use train the models in a different way. Intrigued?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-09T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Image Data Augmentations the Fastai&#39;s way</h1><p class="page-description">This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-06-09T00:00:00-05:00" itemprop="datePublished">
         Jun 9, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -135,7 +135,6 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Installation">Installation </a></li>
 <li class="toc-entry toc-h1"><a href="#Dataset-and-metrics-visualization">Dataset and metrics visualization </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Dataset">Dataset </a></li>
 <li class="toc-entry toc-h2"><a href="#Metrics">Metrics </a></li>
 </ul>
 </li>
@@ -188,72 +187,12 @@ window.onload = wrap_img;
 </h1>
 <p>APIs:</p>
 <ul>
-<li>plot_dataset(ds, count, title): The default value of count is 4. The default value of title is 'dataset'.</li>
-<li>plot_acc(history): The history object is returned by the training function.</li>
-<li>plot_loss(history): The history object is returned by the training function.</li>
+<li>plot_metrics(<strong>self</strong>: Recorder, <strong>nrows</strong>=None, <strong>ncols</strong>=None, <strong>figsize</strong>=None, **kwargs)</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Dataset">
-<a class="anchor" href="#Dataset" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dataset<a class="anchor-link" href="#Dataset"> </a>
-</h2>
-</div>
-</div>
-</div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<details class="description">
-      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
-        <p></p>
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">title_color</span><span class="p">(</span><span class="n">label</span><span class="p">):</span>
-  <span class="n">color</span> <span class="o">=</span> <span class="s1">'black'</span>
-
-  <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
-    <span class="n">color</span> <span class="o">=</span> <span class="s1">'green'</span> <span class="k">if</span> <span class="n">label</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">label</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="k">else</span> <span class="s1">'red'</span>
-
-  <span class="k">return</span> <span class="n">color</span>
-
-<span class="k">def</span> <span class="nf">plot_dataset</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'dataset'</span><span class="p">):</span>
-  <span class="n">size</span> <span class="o">=</span> <span class="mi">4</span>
-  <span class="n">cols</span> <span class="o">=</span> <span class="mi">4</span>
-  <span class="n">rows</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">count</span><span class="o">+</span><span class="n">cols</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">cols</span><span class="p">)</span>
-
-  <span class="n">ds_itr</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">as_numpy_iterator</span><span class="p">()</span>
-  <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="n">cols</span><span class="p">,</span> <span class="n">size</span><span class="o">*</span><span class="n">rows</span><span class="p">))</span>
-  <span class="n">items</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="nb">id</span><span class="p">:</span> <span class="p">(</span><span class="nb">id</span><span class="p">,)</span> <span class="o">+</span> <span class="n">ds_itr</span><span class="o">.</span><span class="n">next</span><span class="p">(),</span> <span class="nb">range</span><span class="p">(</span><span class="n">count</span><span class="p">))</span>
-
-  <span class="k">for</span> <span class="nb">id</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
-    <span class="n">colid</span> <span class="o">=</span> <span class="nb">id</span> <span class="o">%</span> <span class="n">cols</span>
-    <span class="n">rowid</span> <span class="o">=</span> <span class="nb">id</span> <span class="o">/</span> <span class="n">cols</span>
-
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="nb">id</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-
-    <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">title_color</span><span class="p">(</span><span class="n">label</span><span class="p">))</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">"off"</span><span class="p">)</span>
-  
-  <span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
-  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-    </details>
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -330,7 +269,7 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">path</span><span class="o">=</span><span class="n">untar_data</span><span class="p">(</span><span class="n">URLs</span><span class="o">.</span><span class="n">FLOWERS</span><span class="p">)</span>
-<span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'jpg'</span><span class="p">)</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
+<span class="n">path</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -369,7 +308,7 @@ window.onload = wrap_img;
 
     <div>
       <progress value="345243648" class="" max="345236087" style="width:300px; height:20px; vertical-align: middle;"></progress>
-      100.00% [345243648/345236087 00:07&lt;00:00]
+      100.00% [345243648/345236087 00:08&lt;00:00]
     </div>
     
 </div>
@@ -381,7 +320,7 @@ window.onload = wrap_img;
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(#8189) [Path('/root/.fastai/data/oxford-102-flowers/jpg/image_07538.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_07671.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_00367.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_01779.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_00442.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_04974.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_03550.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_04959.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_01796.jpg'),Path('/root/.fastai/data/oxford-102-flowers/jpg/image_02861.jpg')...]</pre>
+<pre>(#4) [Path('/root/.fastai/data/oxford-102-flowers/train.txt'),Path('/root/.fastai/data/oxford-102-flowers/valid.txt'),Path('/root/.fastai/data/oxford-102-flowers/jpg'),Path('/root/.fastai/data/oxford-102-flowers/test.txt')]</pre>
 </div>
 
 </div>
@@ -550,40 +489,8 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">dl</span> <span class="o">=</span> <span class="n">dblock</span><span class="o">.</span><span class="n">dataloaders</span><span class="p">(</span><span class="n">path</span><span class="o">/</span><span class="s1">'jpg'</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">b</span><span class="o">=</span><span class="n">dl</span><span class="o">.</span><span class="n">one_batch</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+<span class="n">b</span><span class="o">=</span><span class="n">dl</span><span class="o">.</span><span class="n">one_batch</span><span class="p">()</span>
+<span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
 </pre></div>
 
     </div>
