@@ -10,8 +10,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?" />
 <meta property="og:description" content="This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?" />
-<link rel="canonical" href="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html" />
-<meta property="og:url" content="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html" />
+<link rel="canonical" href="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/Image_Data_Augmentations_the_Fastai's_way.html" />
+<meta property="og:url" content="https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/Image_Data_Augmentations_the_Fastai's_way.html" />
 <meta property="og:site_name" content="Deep Diving" />
 <meta property="og:image" content="https://xanaga.github.io/posts_en/images/homer_augmented.png" />
 <meta property="og:type" content="article" />
@@ -20,7 +20,7 @@
 <meta property="twitter:image" content="https://xanaga.github.io/posts_en/images/homer_augmented.png" />
 <meta property="twitter:title" content="Image Data Augmentations the Fastai’s way" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-09T00:00:00-05:00","datePublished":"2022-06-09T00:00:00-05:00","description":"This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?","headline":"Image Data Augmentations the Fastai’s way","image":"https://xanaga.github.io/posts_en/images/homer_augmented.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"},"url":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-06-09T00:00:00-05:00","datePublished":"2022-06-09T00:00:00-05:00","description":"This is a version of the codelab from chapter 3 of the Efficient Deep Learning book which covers Data Augmentation for vision applications. In the original PyTorch version we simply train the model for 100 epochs. Although, when using Fastai we normally train the models in a different way. Intrigued?","headline":"Image Data Augmentations the Fastai’s way","image":"https://xanaga.github.io/posts_en/images/homer_augmented.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/Image_Data_Augmentations_the_Fastai's_way.html"},"url":"https://xanaga.github.io/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/Image_Data_Augmentations_the_Fastai's_way.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/posts_en/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://xanaga.github.io/posts_en/feed.xml" title="Deep Diving" /><link rel="shortcut icon" type="image/x-icon" href="/posts_en/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -105,24 +105,24 @@ window.onload = wrap_img;
         <div class="pb-5 d-flex flex-justify-center">
           <div class="px-2">
 
-    <a href="https://github.com/XanaGA/posts_en/tree/master/_notebooks/2022-06-09-[EDL]_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.ipynb" role="button" target="_blank">
+    <a href="https://github.com/XanaGA/posts_en/tree/master/_notebooks/2022-06-09-Image_Data_Augmentations_the_Fastai's_way.ipynb" role="button" target="_blank">
 <img class="notebook-badge-image" src="/posts_en/assets/badges/github.svg" alt="View On GitHub">
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/XanaGA/posts_en/master?filepath=_notebooks%2F2022-06-09-%5BEDL%5D_Chapter_3_Image_Data_Augmentations_the_Fastai%27s_way.ipynb" target="_blank">
+    <a href="https://mybinder.org/v2/gh/XanaGA/posts_en/master?filepath=_notebooks%2F2022-06-09-Image_Data_Augmentations_the_Fastai%27s_way.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/posts_en/assets/badges/binder.svg" alt="Open In Binder"/>
     </a>
 </div>
 
           <div class="px-2">
-    <a href="https://colab.research.google.com/github/XanaGA/posts_en/blob/master/_notebooks/2022-06-09-[EDL]_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.ipynb" target="_blank">
+    <a href="https://colab.research.google.com/github/XanaGA/posts_en/blob/master/_notebooks/2022-06-09-Image_Data_Augmentations_the_Fastai's_way.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/posts_en/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
           <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FXanaGA%2Fposts_en%2Fblob%2Fmaster%2F_notebooks%2F2022-06-09-%5BEDL%5D_Chapter_3_Image_Data_Augmentations_the_Fastai%27s_way.ipynb" target="_blank">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FXanaGA%2Fposts_en%2Fblob%2Fmaster%2F_notebooks%2F2022-06-09-Image_Data_Augmentations_the_Fastai%27s_way.ipynb" target="_blank">
       <img class="notebook-badge-image" src="/posts_en/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
   </a>
 </div>
@@ -132,6 +132,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Introducction">Introducction </a></li>
 <li class="toc-entry toc-h1"><a href="#Installation">Installation </a></li>
 <li class="toc-entry toc-h1"><a href="#Dataset-and-metrics-visualization">Dataset and metrics visualization </a>
 <ul>
@@ -151,7 +152,7 @@ window.onload = wrap_img;
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
-# file to edit: _notebooks/2022-06-09-[EDL]_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.ipynb
+# file to edit: _notebooks/2022-06-09-Image_Data_Augmentations_the_Fastai's_way.ipynb
 -->
 
 <div class="container" id="notebook-container">
@@ -160,6 +161,17 @@ window.onload = wrap_img;
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="https://raw.githubusercontent.com/XanaGA/posts_en/9d6f1969e0598c36419bc3e87df6b488acebdfbe/images/homer_augmented.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Introducction">
+<a class="anchor" href="#Introducction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducction<a class="anchor-link" href="#Introducction"> </a>
+</h1>
+<p>In this notebook we will see how data augmentation can help us to increase the performance of our models, hence needed less training time and data. This is a version of a <a href="https://github.com/EfficientDL/book/tree/main/codelabs">codelab</a> from the <a href="https://efficientdlbook.com/">Efficient Deep Learning</a> book. The difference with the original one is that we will use a training schedule more used in Fastai which help us to perform even better.</p>
 
 </div>
 </div>
@@ -2889,7 +2901,7 @@ Better model found at epoch 6 with accuracy value: 0.9323529601097107.
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/EDL-_Chapter_3_Image_Data_Augmentations_the_Fastai's_way.html" hidden></a>
+</script><a class="u-url" href="/posts_en/data_augmentation/vision/efficient_deeplearning/2022/06/09/Image_Data_Augmentations_the_Fastai's_way.html" hidden></a>
 </article>
 
       </div>
